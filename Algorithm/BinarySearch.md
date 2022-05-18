@@ -45,4 +45,19 @@ binarySearch() 메서드가 해당 값이 존재하면 인덱스 번호를 반�
 
 즉, 
 target값이 존재하면 그 값의 인덱스를 반환하고,  
-**존재하지 않으면 그 값을 배열에 끼워 넣어 <span style="color:blue">1부터 시작하는 인덱스를 음수로 변경하여 반환</span>**한다!
+존재하지 않으면 그 값을 배열에 끼워 넣어 <span style="color:blue">1부터 시작하는 인덱스를 음수로 변경하여 반환</span>한다!  
+
+음수 인덱스에 +1을 하고 음수를 양수로 변경해주면 target값이 들어갈 위치의 index를 얻을 수 있다!!
+
+```java
+import java.util.Arrays;
+
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int idx = Arrays.binarySearch(nums, target);
+        
+        if(idx >= 0) return idx;
+        else return -(idx+1);
+    }
+}
+```
