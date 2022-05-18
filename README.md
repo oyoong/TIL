@@ -1,5 +1,5 @@
 # Today I Learned (TIL)
-    개발 공부 기록용💻
+    개발 공부 기록용 💻
 
 <p align="center" style="line-height: 2;">
     <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white">
